@@ -1,0 +1,21 @@
+{
+    "name": "jsm21/furry-pet-camp",
+    "description": "Proyecto (Proyecto Informatico 1)",
+    "type": "project",
+    "authors": [
+        {
+            "name": "TeamRocket"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7",
+        "phpmailer/phpmailer": "^6.6"
+    },
+    "autoload":{
+        "psr-4": {
+            "Model\\": "./models",
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers"
+        }
+    }
+}

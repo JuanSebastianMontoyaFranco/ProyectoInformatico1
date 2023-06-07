@@ -1,0 +1,40 @@
+.listado-servicios {
+
+    display: grid;
+    gap: 2rem;
+    @include tablet {
+        @include grid(2, 2rem)
+    }
+    .servicio {
+        background-color: $verde;
+        padding: 3rem;
+        border-radius: 1rem;
+        transition-property: transform;
+        transition-duration: 300ms ;
+        text-align: center;
+        cursor: pointer;
+
+        &.seleccionado {
+            background-color: $amarillo;
+
+            p {
+                color: $blanco;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            color: $blanco;
+            margin: 0 0 calc($separacion / 4) 0;
+        }
+
+        .precio-servicio {
+            font-weight: $bold;
+            font-size: 3rem;
+            margin: 0;
+        }
+    }
+}

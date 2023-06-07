@@ -1,0 +1,20 @@
+.citas {
+    list-style: none;
+    padding: 0;
+    li {
+        padding: 1rem;
+        border-top: 1px solid $verde;
+        p {
+            font-weight: $bold;
+            color: $verde;
+        }
+    }
+
+    span,
+    .servicio {
+        font-weight: $regular;
+        color: $negro;
+    }
+
+    
+}
